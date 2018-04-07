@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavTop from './NavTop';
-import JVMContainer from './containers/JVMContainer';
+import JVMContainer from './containers/jvmContainer';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducers/rootReducer';

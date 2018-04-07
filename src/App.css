@@ -9,6 +9,15 @@ pre {
   margin: 4px;
 }
 
+.jvm-method-area {
+  background-color: #eef;
+  border-style: solid;
+  border-color: #ddf;
+  padding: 10px;
+  margin: 4px;
+  background-color: #eef;
+}
+
 .jvm-runtime-const-pool {
   background-color: #eef;
   border-style: solid;

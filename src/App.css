@@ -1,0 +1,63 @@
+h5 {
+  font-weight: lighter;
+}
+
+pre {
+}
+
+.jvm-bytecode {
+  margin: 4px;
+}
+
+.jvm-runtime-const-pool {
+  background-color: #eef;
+  border-style: solid;
+  border-color: #ddf;
+  padding: 10px;
+  margin: 4px;
+  background-color: #eef;
+}
+
+.jvm-thread {
+  width: 50%;
+  background-color: #eef;
+  border-style: solid;
+  border-color: #ddf;
+  padding: 10px;
+  margin: 4px;
+  background-color: #eef;
+}
+
+.jvm-pc {
+  background-color: #edd;
+  border-style: solid;
+  border-color: #bbb;
+  padding: 10px;
+  margin: 4px;
+  width: 30%;
+}
+
+.jvm-stack {
+  border-color: #bbb;
+  border-style: solid;
+  background-color: #edd;
+  padding: 10px;
+  margin: 4px;
+}
+
+.jvm-heap {
+  background-color: #eef;
+  border-style: solid;
+  border-color: #ddf;
+  padding: 10px;
+  margin: 4px;
+  background-color: #eef;
+}
+
+.jvm-frame {
+  background-color: #ddd;
+  border-color: #aaa;
+  border-style: solid;
+  padding: 10px;
+  margin: 4px;
+}

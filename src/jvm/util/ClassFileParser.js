@@ -3,6 +3,23 @@
   https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-4.html#jvms-4.1
   */
 
+const ConstantPool = {
+    '7'  : {'name' : 'CONSTANT_Class'              , 'size' : 2 },
+    '6'  : {'name' : 'CONSTANT_Double'             , 'size' : 8 },
+    '9'  : {'name' : 'CONSTANT_Fieldref'           , 'size' : 4 },
+    '4'  : {'name' : 'CONSTANT_Float'              , 'size' : 4 },
+    '3'  : {'name' : 'CONSTANT_Integer'            , 'size' : 4 },
+    '11' : {'name' : 'CONSTANT_InterfaceMethodref' , 'size' : 4 },
+    '18' : {'name' : 'CONSTANT_InvokeDynamic'      , 'size' : 4 },
+    '5'  : {'name' : 'CONSTANT_Long'               , 'size' : 8 },
+    '15' : {'name' : 'CONSTANT_MethodHandle'       , 'size' : 3 },
+    '16' : {'name' : 'CONSTANT_MethodType'         , 'size' : 2 },
+    '10' : {'name' : 'CONSTANT_Methodref'          , 'size' : 4 },
+    '12' : {'name' : 'CONSTANT_NameAndType'        , 'size' : 4 },
+    '8'  : {'name' : 'CONSTANT_String'             , 'size' : 2 },
+    '1'  : {'name' : 'CONSTANT_Utf8'               , 'size' : 3 }
+};
+
 const ClassFile = [
     {name: 'magic', size: 4},
     {name: 'minor_version', size: 2},
@@ -43,7 +60,7 @@ const ClassFileParser = (classFileBytes) => {
         if(typeof b_max != 'string') {
             var byteArray = Array(b_max);
             for(var i = 0; i < b_max; i++) {
-                byteArray[i] = addTwoJavaClassByteCode[currentByte + i];
+                byteArray[i] = classFileBytes[currentByte + i];
             }
             parsedFields[f] = bytesToInt(byteArray);
             currentByte += b_max;
